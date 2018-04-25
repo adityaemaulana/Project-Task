@@ -1,0 +1,64 @@
+{"event":
+	[
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 15,
+			"img" : "img/parambudaya.jpg"
+		},
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 16,
+			"img" : "img/parambudaya.jpg"
+		},
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 12,
+			"img" : "img/parambudaya.jpg"
+		},
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 10,
+			"img" : "img/parambudaya.jpg"
+		},
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 19,
+			"img" : "img/parambudaya.jpg"
+		},
+		{
+			"name" : "PARAMABUDAYA 2018",
+			"creator" : "UKM DJAWA",
+			"content" : 
+			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et magna sed enim pharetra pretium. Pellentesque in consequat tortor, et dignissim dui. Duis mollis lacinia mollis.",
+			"terkumpul" : 5872000,
+			"tercapai" : 81,
+			"hari" : 6,
+			"img" : "img/parambudaya.jpg"
+		}	
+	]
+}

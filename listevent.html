@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>danusKuy</title>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<!--Open Iconic-->
+	<link rel="stylesheet" href="open-iconic-master/font/css/open-iconic-bootstrap.css">
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--JQuery PLUGIN-->
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="magnific-popup/dist/magnific-popup.css">	
+	<link rel="stylesheet" href="style.css">
+
+	<script src="js/listevent.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--Header!-->
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top header-navbar">
+		<a class="navbar-brand" href="home.html"><img src="img/logowhite.png" alt="danusyuk"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto ml-2">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><b>Tipe event</b></a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Event</a>
+						<a class="dropdown-item" href=#"">Seminar</a>
+					</div>
+				</li>
+			</ul>
+			<form class="form-inline w-75 col-md-9">
+				<input class="nav-search-input form-control w-75" type="search" placeholder="Cari Event..." aria-label="Search">
+				<button class="btn nav-search-btn" type="submit"><span class="oi oi-magnifying-glass" title="magnifying glass" aria-hidden="true"></span></button>
+			</form>
+			<div class="btn-group" role="group" aria-label="Basic example">
+				<a role="button" class="btn btn-login btn-link nav-btn mx-2" href="Login.html">Login</a>
+				<a class="btn btn-daftar btn-outline-primary rounded mr-4" href="regispelanggan.html">Daftar</a>
+			</div>
+		</div>
+	</nav>
+	
+	<img src="img/background1.jpg" class="img-fluid" alt="Background Image">
+
+	<div class="container-fluid container-filter-bar pt-4 pb-3">
+		<div class="row justify-content-center">
+			<div class="col-md-5">
+				<h3><b>Temukan event terbaik disini</b></h3>
+				<p>Atau galang dana sekarang</p>
+				<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan Event</button>
+
+				<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				      	<h5 class="modal-title">Masukkan data event kalian</h5>
+				      	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				      		<span aria-hidden="true">&times;</span>
+				      	</button>
+				      </div>
+				      <div class="modal-body">
+				      	<form>
+				      		<div class="form-group">
+				      			<label for="event-name" class="col-form-label">Nama event:</label>
+				      			<input type="text" class="form-control" id="event-name">
+				      		</div>
+				      		<div class="form-group">
+				      			<label for="event-creator" class="col-form-label">Penyelenggara event:</label>
+				      			<input type="text" class="form-control" id="event-creator">
+				      		</div>	
+				      		<div class="form-group">
+				      			<label for="event-creator" class="col-form-label">Lama Penggalangan event(hari):</label>
+				      			<input type="number" class="form-control" id="event-time">
+				      		</div>
+				      		<div class="form-group">
+				      			<label for="event-creator" class="col-form-label">Lokasi event:</label>
+				      			<input type="text" class="form-control" id="lokasi">
+				      		</div>	
+				      		<div class="form-group">
+				      			<label for="event-creator" class="col-form-label">Dana yang dibutuhkan(Rp):</label>
+				      			<input type="number" class="form-control" id="dana-event">
+				      		</div>	
+				      		<div class="form-group">
+				      			<label for="event-creator" class="col-form-label">Deskripsi singkat acara:</label>
+				      			<textarea type="text" class="form-control" id="deskripsi" rows="3"></textarea>
+				      		</div>	
+				      		<div class="form-group">
+					      		<div class="custom-file">
+								  <input type="file" class="custom-file-input" id="file-photo">
+								  <label class="custom-file-label" for="file-photo">Pilih poster event</label>
+								</div>
+							</div>
+				      		<button type="button" class="btn btn-primary" id="btn-submit" data-dismiss="modal">Submit</button>
+
+				      	</form>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+			</div>
+			<div class="col-md-5">
+				<form>
+					<div class="form-inline">
+						<select id="kategoriSelect" class="form-control">
+							<option selected>Pilih Kategori...</option>
+							<option>Seni & Budaya</option>
+							<option>Teknologi</option>
+							<option>Musik</option>
+							<option>Komunitas</option>
+						</select>
+						<input type="text" class="form-control w-50 ml-3" placeholder="Bandung, Indonesia">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--Filter Bar-->
+
+	<div class="mx-auto col-md-10 pt-5">
+		<div class="card-deck">
+			<div id="list-event-card" class="row">
+
+			</div>
+		</div>
+	</div>
+	<!--List Card Event-->
+		
+	<!--Footer!-->
+	<div>
+		<div class="footer-1 container-fluid mt-5">
+			<div class="row pt-3">
+				<div class="col-6 pl-5"><img src="img/logo.png" alt="danusyuk"></div>
+				<div class="col-6">
+					<div class="row float-right">
+						<p class="pr-4"><b>Temukan kami di:</b></p>
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><img class="w-50" src="img/facebook.png" alt=""></a></li>
+							<li class="list-inline-item"><a href="#"><img class="w-50" src="img/twitter.png" alt=""></a></li>
+							<li class="list-inline-item"><a href="#"><img class="w-50" src="img/instagram.png" alt=""></a></li>
+							<li class="list-inline-item"><a href="#"><img class="w-50" src="img/google-plus.png" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pt-3">
+			<div class="col-lg-3 col-md-5 col-sm-5 pl-4">
+				<p class="text-justify footer-text1">
+					<a class="footer-brand"><b>danusKuy</b></a> adalah platform untuk membantu penggalangan
+					dana usaha untuk event-event di sekitar anda secara
+					online
+				</p>
+			</div>
+			<p class="pl-4 footer-text2">
+				<b>Copyright 2018 &copy; PT. Bantu Yuk All Rights Reserved</b>
+			</p>
+		</div>
+	</div>
+
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!--Bootstrap JS-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<!-- Magnific Popup core JS file -->
+	<script src="magnific-popup/dist/jquery.magnific-popup.js"></script>
+		
+	<script>
+		$(document).ready(function() {
+			//JS for magnific popup plugin
+			$(".img-popup-link").magnificPopup({type : 'image'});
+
+			$('.btn-delete').click(function() {
+				$(this).remove();
+			});
+		});
+	</script>
+
+</body>
+</html>

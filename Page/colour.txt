@@ -1,0 +1,6 @@
+orange : #FF6F00
+background gray : #F7F7F7
+tulisan gray : #828282
+tulisan gray : #9E9E9E
+hijau : #64DD17
+merah : #DD2C00
